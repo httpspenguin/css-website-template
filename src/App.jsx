@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Header from './components/header.jsx'
+import Footer from "./components/footer.jsx";
+import Home from "./pages/home.jsx";
+import AboutMe from "./pages/about-me.jsx";
+import Education from "./pages/education.jsx";
+import Experience from "./pages/experience.jsx";
+import Skills from "./pages/technical-skills.jsx";
+import Achievements from "./pages/achievements.jsx";
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+function App() {
+    const [pageTitle, setPageTitle] = useState("Home");
+
+    return (
+        <Router>
+            <Header title={pageTitle} />
+            <main className="flex-1">
+                <Routes>
+                    <Route path="/" element={<Home setTitle={setPageTitle} />} />
+                    <Route path="/education" element={<Education setTitle={setPageTitle} />} />
+                    <Route path="/technical-skills" element={<Skills setTitle={setPageTitle} />} />
+                    <Route path="/experience" element={<Experience setTitle={setPageTitle} />} />
+                    <Route path="/achievements" element={<Achievements setTitle={setPageTitle} />} />
+                    <Route path="/about-me" element={<AboutMe setTitle={setPageTitle} />} />
+                </Routes>
+            </main>
+            <Footer />
+        </Router>
+    )
 }
 
 export default App
