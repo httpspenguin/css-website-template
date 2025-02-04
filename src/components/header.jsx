@@ -2,12 +2,19 @@ import PropTypes from "prop-types";
 
 import Navigation from './main_navigation.jsx'
 
+import '../assets/styles/header.css';
+
+
 const Header = ({ title }) => {
     return (
-        <header>
+        <header className="header">
             <Navigation />
 
-            {title === "Home" ? "" : <h1>{title}</h1>}
+            {title === "Home" ? "" :
+                <div className="header__header-banner">
+                    <h1 className="header__title">{title}</h1>
+                </div>
+            }
         </header>
     )
 }

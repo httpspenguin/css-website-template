@@ -1,0 +1,10 @@
+.header__header-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.header__title {
+    font-size: 50px;
+}
