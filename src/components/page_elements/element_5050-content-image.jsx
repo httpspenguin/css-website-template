@@ -1,0 +1,1 @@
+import '../../assets/styles/page_elements/element_5050-content-image.css';

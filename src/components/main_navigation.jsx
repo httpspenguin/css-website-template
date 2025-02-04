@@ -1,4 +1,5 @@
 import siteLogo from '../assets/react.svg'
+import '../assets/styles/main_nav.css';
 
 export default function Navigation() {
     const navLinks = [
@@ -11,15 +12,15 @@ export default function Navigation() {
 
     return (
         <header>
-            <nav>
-                <div className="flex justify-between items-center">
+            <nav className="main-nav">
+                <div className="main-nav__content flex justify-between items-center">
                     <a href="/">
-                        <img src={siteLogo} className="site-logo w-24" alt="Portfolio Site logo"/>
+                        <img src={siteLogo} className="main-nav__site-logo w-24" alt="Portfolio Site logo"/>
                     </a>
 
                     <div>
                         {navLinks.map((item) => (
-                            <a className="ml-6 text-lg" key={item.link} href={item.link}>{item.name}</a>
+                            <a className="main-nav__nav-link ml-6 text-lg" key={item.link} href={item.link}>{item.name}</a>
                         ))}
                     </div>
                 </div>
