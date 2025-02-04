@@ -10,6 +10,19 @@ export default function Navigation() {
         { name: 'About me', link: '/about-me' },
     ];
 
+    const handleToggle = () => {
+        const mobileNav = document.querySelector('.main-nav__menu-mobile');
+
+        mobileNav.classList.toggle('show');
+
+        if (mobileNav.classList.contains('show')) {
+            mobileNav.style.transform = "translateX(0)";
+
+        } else {
+            mobileNav.style.transform = "translateX(100%)";
+        }
+    }
+
     return (
         <nav className="main-nav">
             <div className="main-nav__content">
@@ -23,9 +36,9 @@ export default function Navigation() {
                     ))}
                 </div>
 
-                <div className="main-nav__toggle">
-
-                </div>
+                <button className="main-nav__toggle" onClick={handleToggle}>
+                    <i className="fa-solid fa-bars"></i>
+                </button>
 
                 <div className="main-nav__menu-mobile">
                     {navLinks.map((item) => (
