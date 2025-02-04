@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
+import HomeHero from "../components/page_elements/element_home-hero.jsx";
 
 export default function Home({ setTitle }) {
     useEffect(() => {
@@ -8,9 +9,9 @@ export default function Home({ setTitle }) {
     }, [setTitle]);
 
     return (
-        <section>
-
-        </section>
+        <>
+            <HomeHero title="Your Name" />
+        </>
     )
 }
 

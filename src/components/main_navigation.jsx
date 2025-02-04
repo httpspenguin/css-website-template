@@ -11,20 +11,28 @@ export default function Navigation() {
     ];
 
     return (
-        <header>
-            <nav className="main-nav">
-                <div className="main-nav__content flex justify-between items-center">
-                    <a href="/">
-                        <img src={siteLogo} className="main-nav__site-logo w-24" alt="Portfolio Site logo"/>
-                    </a>
+        <nav className="main-nav">
+            <div className="main-nav__content">
+                <a href="/">
+                    <img src={siteLogo} className="main-nav__site-logo" alt="Portfolio Site logo"/>
+                </a>
 
-                    <div>
-                        {navLinks.map((item) => (
-                            <a className="main-nav__nav-link ml-6 text-lg" key={item.link} href={item.link}>{item.name}</a>
-                        ))}
-                    </div>
+                <div className="main-nav__menu-desktop">
+                    {navLinks.map((item) => (
+                        <a className="main-nav__nav-link" key={item.link} href={item.link}>{item.name}</a>
+                    ))}
                 </div>
-            </nav>
-        </header>
+
+                <div className="main-nav__toggle">
+
+                </div>
+
+                <div className="main-nav__menu-mobile">
+                    {navLinks.map((item) => (
+                        <a className="main-nav__nav-link" key={item.link} href={item.link}>{item.name}</a>
+                    ))}
+                </div>
+            </div>
+        </nav>
     )
 }

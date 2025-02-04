@@ -1,0 +1,50 @@
+.home-hero {
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(2,8,45,0.6) 0%, rgba(2,8,45,0.6) 85%), url('../../images/inb.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.home-hero__profile-pic {
+    border-radius: 50%;
+    margin-bottom: 24px;
+    height: 150px;
+    width: 150px;
+}
+
+.home-hero__hero-title {
+    font-size: 70px;
+    margin-bottom: 24px;
+}
+
+.home-hero__hero-text {
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .home-hero {
+        padding: 0 30px;
+    }
+
+    .home-hero__profile-pic {
+        margin-bottom: 16px;
+        height: 75px;
+        width: 75px;
+    }
+
+    .home-hero__hero-title {
+        font-size: 50px;
+        margin-bottom: 16px;
+    }
+
+    .home-hero__hero-text {
+        width: 90%;
+    }
+}
