@@ -7,7 +7,7 @@ const Header = ({ title }) => {
         <header>
             <Navigation />
 
-            <h1>{title}</h1>
+            {title === "Home" ? "" : <h1>{title}</h1>}
         </header>
     )
 }
