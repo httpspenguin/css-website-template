@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
 import HomeHero from "../components/page_elements/element_home-hero.jsx";
+import CardRow from "../components/page_elements/element_card-row.jsx";
 
 export default function Home({ setTitle }) {
     useEffect(() => {
@@ -11,6 +12,7 @@ export default function Home({ setTitle }) {
     return (
         <>
             <HomeHero title="Your Name" />
+            <CardRow title="A comprehensive education" />
         </>
     )
 }

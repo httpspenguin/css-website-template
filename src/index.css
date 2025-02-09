@@ -1,3 +1,6 @@
+@import './assets/styles/page_elements/element_home-hero.css';
+@import './assets/styles/page_elements/element_card-row.css';
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,27 +16,76 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #76aee2;
-}
-
 body {
   margin: 0;
   display: flex;
-  /*place-items: center;*/
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
+/* Headings & Paragraphs */
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
+  margin-top: 0;
 }
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 18px;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  /*color: #646cff;*/
+  color: #ffffff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #76aee2;
+  /*color: #747bff;*/
+}
+
+a.full-card-click:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+}
+
+
 
 button {
   border-radius: 8px;
@@ -59,14 +111,12 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/

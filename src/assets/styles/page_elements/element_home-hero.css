@@ -19,11 +19,6 @@
     width: 150px;
 }
 
-.home-hero__hero-title {
-    font-size: 70px;
-    margin-bottom: 24px;
-}
-
 .home-hero__hero-text {
     width: 60%;
 }
@@ -37,11 +32,6 @@
         margin-bottom: 16px;
         height: 75px;
         width: 75px;
-    }
-
-    .home-hero__hero-title {
-        font-size: 50px;
-        margin-bottom: 16px;
     }
 
     .home-hero__hero-text {
