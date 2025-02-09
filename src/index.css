@@ -1,5 +1,6 @@
 @import './assets/styles/page_elements/element_home-hero.css';
 @import './assets/styles/page_elements/element_card-row.css';
+@import './assets/styles/page_elements/element_5050-content-image.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
