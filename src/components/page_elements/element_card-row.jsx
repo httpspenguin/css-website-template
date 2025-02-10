@@ -1,12 +1,8 @@
 import PropTypes from "prop-types";
 
 
-const CardRow = ({ title }) => {
-    const cards = [
-        { icon: 'fa-solid fa-school', title: 'GCSEs', text: '10 qualifications A*-C', link: '/education', anchor: 'gcses' },
-        { icon: 'fa-solid fa-book', title: 'A Levels', text: '3 qualifications A*-D', link: '/education', anchor: 'alevels' },
-        { icon: 'fa-solid fa-graduation-cap', title: 'Degree', text: 'BSc in progress, expected to graduate in 2026', link: '/education', anchor: 'bachelors' },
-    ];
+const CardRow = ({ title, cards }) => {
+
 
     return (
         <section className="card-row">
@@ -32,7 +28,8 @@ const CardRow = ({ title }) => {
 }
 
 CardRow.propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string,
+    cards: PropTypes.array,
 };
 
 export default CardRow;

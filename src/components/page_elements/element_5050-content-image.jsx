@@ -1,15 +1,14 @@
 import PropTypes from "prop-types";
-import image from "../../assets/images/inb.jpg";
 
 const ContentImageSplit = ({ title, text, imageSrc, anchor, reversed }) => {
     return (
         <section className={`content-image-split reversed-${reversed}`} id={anchor}>
             <div className="content-image-split__img-col">
-                <img className="content-image-split__img" src={image} alt=""/>
+                <img className="content-image-split__img" src={imageSrc} alt=""/>
             </div>
             <div className="content-image-split__content-col">
                 <h2 className="content-image-split__title">{title}</h2>
-                <p className="content-image-split__text">{text} {imageSrc}</p>
+                <p className="content-image-split__text">{text}</p>
             </div>
         </section>
     );
