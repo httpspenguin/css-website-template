@@ -14,7 +14,7 @@ const HomeHero = ({ title, text, imageSrc }) => {
 HomeHero.propTypes = {
     title: PropTypes.string.isRequired,
     text: PropTypes.string,
-    imageSrc: PropTypes.string,
+    imageSrc: PropTypes.object,
 };
 
 export default HomeHero;

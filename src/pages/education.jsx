@@ -12,25 +12,26 @@ export default function Education({ setTitle }) {
     const blocks = [
         {
             id: 1,
-            title: 'Lorem ipsum dolor',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies cursus risus sit amet cursus. Aliquam consequat sollicitudin auctor. Aliquam diam lorem, eleifend at blandit et, suscipit sit amet ante. Nullam a tincidunt augue, gravida dictum est. Vestibulum gravida quis tellus vitae posuere.',
-            image: {image},
+            title: 'GCSEs',
+            text: 'I received 10 GCSEs at grades A*-C between 20XX and 20XX at My School, including:',
+            image: image,
+            list: ['English Language: A*', 'Mathematics: A', 'Science (Double Award): A', 'History: B'],
             anchor: 'gcses',
             reversed: false
         },
         {
             id: 2,
-            title: 'Lorem ipsum dolor',
+            title: 'A Levels',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies cursus risus sit amet cursus. Aliquam consequat sollicitudin auctor. Aliquam diam lorem, eleifend at blandit et, suscipit sit amet ante. Nullam a tincidunt augue, gravida dictum est. Vestibulum gravida quis tellus vitae posuere.',
-            image: {image},
+            image: image,
             anchor: 'alevels',
             reversed: true
         },
         {
             id: 3,
-            title: 'Lorem ipsum dolor',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies cursus risus sit amet cursus. Aliquam consequat sollicitudin auctor. Aliquam diam lorem, eleifend at blandit et, suscipit sit amet ante. Nullam a tincidunt augue, gravida dictum est. Vestibulum gravida quis tellus vitae posuere.',
-            image: {image},
+            title: 'Bachelor\'s Degree',
+            text: 'I am currently studying for my BSc (Hons) in Computer Science at the University of Lincoln, where I have studied modules such as programming fundamentals and user experience design.',
+            image: image,
             anchor: 'bachelors',
             reversed: false
         },
@@ -39,7 +40,7 @@ export default function Education({ setTitle }) {
     return (
         <>
             {blocks.map((item) => (
-                <ContentImageSplit key={item.id} title={item.title} text={item.text} imageSrc={image} anchor={item.anchor} reversed={item.reversed} />
+                <ContentImageSplit key={item.id} title={item.title} text={item.text} imageSrc={item.image} list={item.list} anchor={item.anchor} reversed={item.reversed} />
             ))}
         </>
     )
