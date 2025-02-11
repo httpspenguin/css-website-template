@@ -11,6 +11,7 @@ import Education from "./pages/education.jsx";
 import Experience from "./pages/experience.jsx";
 import Skills from "./pages/technical-skills.jsx";
 import Achievements from "./pages/achievements.jsx";
+import Portfolio from "./pages/portfolio.jsx";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                     <Route path="/technical-skills" element={<Skills setTitle={setPageTitle} />} />
                     <Route path="/experience" element={<Experience setTitle={setPageTitle} />} />
                     <Route path="/achievements" element={<Achievements setTitle={setPageTitle} />} />
+                    <Route path="/portfolio" element={<Portfolio setTitle={setPageTitle} />} />
                     <Route path="/about-me" element={<AboutMe setTitle={setPageTitle} />} />
                 </Routes>
             </main>

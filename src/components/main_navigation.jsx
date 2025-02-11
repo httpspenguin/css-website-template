@@ -7,6 +7,7 @@ export default function Navigation() {
         { name: 'Technical Skills', link: '/technical-skills' },
         { name: 'Experience', link: '/experience' },
         { name: 'Achievements', link: '/achievements' },
+        { name: 'Portfolio', link: '/portfolio' },
         { name: 'About me', link: '/about-me' },
     ];
 

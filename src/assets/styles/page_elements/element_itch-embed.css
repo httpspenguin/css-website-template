@@ -1,0 +1,9 @@
+.iframe-element {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.iframe-element__content {
+    display: flex;
+    justify-content: space-between;
+}
