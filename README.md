@@ -1,4 +1,5 @@
 # CSS Workshop Series - Building your portfolio with React
+by Ally Garton
 
 ## Frameworks, Libraries, & Tools
 - [React](https://react.dev/) built with [Vite](https://vite.dev/).
@@ -10,12 +11,12 @@
 - [Lite Youtube](https://www.npmjs.com/package/lite-youtube-embed) for privately and efficiently rendering YouTube videos in your site.
 
 ## Getting Started
-- Start by signing in to GitHub Desktop.
+- Start by signing in to GitHub Desktop - it should be installed on all lab PCs.
 - Clone this repo in GitHub Desktop:
   - Click the green `<> Code` button above and copy the URL under HTTPS.
   - In GitHub Desktop, navigate to `File > Clone a repository > URL` and paste the URL you just copied from GitHub.
   - Choose a location (`Documents` is fine) and press `Clone`.
 - Set up a repo in your own GitHub account by navigating to your repositories and clicking `New`. This will be where your portfolio site will sit. Leave it set to public for now. You do not need a readme, gitignore, or license.
 - In the Command Prompt (type `cmd` into Windows search), navigate to this cloned repo's files. You can do this using `cd <FILEPATH>` - in this case `cd documents` should do the trick.
-- Type `git remote set-url origin http://github.com/YOUR_USERNAME/YOUR_NEW_REPO`, replacing the necessary parts. You don't need the @ in your username.
+- Still in the Command Prompt, type `git remote set-url origin http://github.com/YOUR_USERNAME/YOUR_NEW_REPO`, replacing the necessary parts. You don't need the @ in your username.
 - Open up the cloned repo in VSCode. Try adding a `.txt` file to the file structure and committing it via GitHub Desktop. If it commits without any issues, you're good to go! :star2:
