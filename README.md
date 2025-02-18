@@ -4,7 +4,7 @@ by Ally Garton
 ## Frameworks, Libraries, & Tools
 - [React](https://react.dev/) built with [Vite](https://vite.dev/).
 - [JSX](https://www.w3schools.com/react/react_jsx.asp) (for the sake of maximum simplicity - please feel free to build your own project using TSX).
-- [Tailwind](https://tailwindcss.com/) is available for use, however the base project uses vanilla CSS. To switch off vanilla CSS and switch on Tailwind, go to `src/index.css`, comment out the imports at the top of the file, and uncomment the imports at the bottom of the file. This will break the styling initially, but you can build it back up using Tailwind.
+- [Tailwind](https://tailwindcss.com/) is available for use, however the base project uses vanilla CSS. For the sake of this workshop, working in vanilla CSS is recommended. To switch off vanilla CSS and switch on Tailwind, go to `src/index.css`, comment out the imports at the top of the file, and uncomment the imports at the bottom of the file. This will break the styling initially, but you can build it back up using Tailwind.
 - [Google Fonts](https://fonts.google.com/) for...fonts.
 - [FontAwesome](https://fontawesome.com/search?ic=free) for flexible pre-made icons. Free version only!
 - [Animate On Scroll](https://michalsnik.github.io/aos/) (AOS) for animating components.
@@ -20,3 +20,10 @@ by Ally Garton
 - In the Command Prompt (type `cmd` into Windows search), navigate to this cloned repo's files. You can do this using `cd <FILEPATH>` - in this case `cd documents` should do the trick.
 - Still in the Command Prompt, type `git remote set-url origin http://github.com/YOUR_USERNAME/YOUR_NEW_REPO`, replacing the necessary parts. You don't need the @ in your username.
 - Open up the cloned repo in VSCode. Try adding a `.txt` file to the file structure and committing it via GitHub Desktop. If it commits without any issues, you're good to go! :star2:
+
+## Start from scratch (for the confident!)
+- Ensure you have the latest versions of Node and NPM installed.
+- Navigate to your dev space using the Command Prompt and run `npm create vite@latest`.
+- Name your project.
+- Choose React from the list of frameworks.
+- Choose between JavaScript and TypeScript (I recommend TypeScript, but it's your call).
