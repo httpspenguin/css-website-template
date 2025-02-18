@@ -13,14 +13,17 @@ export default function Navigation() {
 
     const handleToggle = () => {
         const mobileNav = document.querySelector('.main-nav__menu-mobile');
+        const body = document.querySelector('body');
 
         mobileNav.classList.toggle('show');
 
         if (mobileNav.classList.contains('show')) {
             mobileNav.style.transform = "translateX(0)";
+            body.style.overflow = 'hidden';
 
         } else {
             mobileNav.style.transform = "translateX(100%)";
+            body.style.overflow = 'scroll';
         }
     }
 

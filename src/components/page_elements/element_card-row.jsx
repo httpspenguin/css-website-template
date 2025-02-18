@@ -2,8 +2,6 @@ import PropTypes from "prop-types";
 
 
 const CardRow = ({ title, cards }) => {
-
-
     return (
         <section className="card-row">
             <h2>{title}</h2>

@@ -8,9 +8,9 @@ export default function Skills({ setTitle }) {
     }, [setTitle]);
 
     return (
-        <section>
+        <>
 
-        </section>
+        </>
     )
 }
 

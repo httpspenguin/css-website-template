@@ -35,12 +35,12 @@ export default function Portfolio({ setTitle }) {
 
     return (
         <>
+            <YouTubeVideo title="Watch a short overview" description="A quick walkthrough of gameplay from top games in my portfolio. Use the itch.io links below to download and play." videoId="ogfYd705cRs" playTitle="My Portfolio Video" />
+
             {widgets.map((item, index) => (
                 <IFrameElement key={index} title={item.title} source={item.frameSrc} link={item.link}
                                description={item.description} reversed={item.reversed}/>
             ))}
-
-            <YouTubeVideo title="Portfolio Overview" description="Watch a quick walkthrough of top games from my portfolio." videoId="ogfYd705cRs" playTitle="My Portfolio Video" />
         </>
     )
 }

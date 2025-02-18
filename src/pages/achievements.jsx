@@ -8,9 +8,9 @@ export default function Achievements({ setTitle }) {
     }, [setTitle]);
 
     return (
-        <section>
+        <>
 
-        </section>
+        </>
     )
 }
 

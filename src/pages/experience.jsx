@@ -8,9 +8,9 @@ export default function Experience({ setTitle }) {
     }, [setTitle]);
 
     return (
-        <section>
+        <>
 
-        </section>
+        </>
     )
 }
 

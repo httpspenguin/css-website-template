@@ -1,8 +1,8 @@
 .iframe-element {
-    margin: 0 auto;
-    max-width: 70%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto 45px;
+    max-width: 70%;
 }
 
 .iframe-element.reversed-true {
@@ -21,16 +21,16 @@
 }
 
 .iframe-element__iframe {
-    margin: 15px 15px;
+    margin: 0 15px;
 }
 
 .iframe-element__description {
-    margin: 15px 15px;
+    margin: 0 15px;
 }
 
 @media (max-width: 768px) {
     .iframe-element {
-        max-width: 90%;
+        max-width: 80%;
     }
 
     .iframe-element.reversed-true {
@@ -40,5 +40,9 @@
     .iframe-element__content {
         flex-direction: column;
         width: 100%;
+    }
+
+    .iframe-element__iframe {
+        margin: 0 15px 20px;
     }
 }

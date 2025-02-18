@@ -35,3 +35,23 @@
     margin: 0;
     padding-left: 15px;
 }
+
+@media (max-width: 768px) {
+    .content-image-split {
+        flex-direction: column;
+    }
+
+    .content-image-split.reversed-true {
+        flex-direction: column;
+    }
+
+    .content-image-split__img-col {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .content-image-split__content-col {
+        padding: 0;
+        width: 100%;
+    }
+}

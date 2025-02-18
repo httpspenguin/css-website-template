@@ -1,5 +1,7 @@
 .main-nav {
+    position: relative;
     padding: 35px;
+    z-index: 10;
 }
 
 .main-nav__site-logo {
@@ -21,15 +23,18 @@
 }
 
 .main-nav__toggle {
+    background-color: transparent;
+    border: none;
     display: none;
 }
 
 .main-nav__nav-link {
     font-size: 18px;
     margin-left: 24px;
+    width: fit-content;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .main-nav {
         padding: 20px;
     }

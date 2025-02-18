@@ -1,7 +1,7 @@
 .youtube-video {
     margin: 0 auto;
     max-width: 80%;
-    padding: 60px 0;
+    padding: 0 0 60px;
 }
 
 .youtube-video__title, .youtube-video__description {

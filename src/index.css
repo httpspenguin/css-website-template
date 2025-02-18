@@ -69,14 +69,13 @@ p {
 /* Links */
 a {
   font-weight: 500;
-  /*color: #646cff;*/
   color: #ffffff;
   text-decoration: inherit;
+  transition: all 300ms cubic-bezier(0, .1, .33, .99);
 }
 
 a:hover {
   color: #76aee2;
-  /*color: #747bff;*/
 }
 
 a.full-card-click:after {
@@ -88,37 +87,6 @@ a.full-card-click:after {
   content: "";
 }
 
-
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
 /*@tailwind base;*/
 /*@tailwind components;*/

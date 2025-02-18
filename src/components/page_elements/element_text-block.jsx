@@ -1,1 +1,0 @@
-import '../../assets/styles/page_elements/element_text-block.css';
