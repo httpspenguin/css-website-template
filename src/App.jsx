@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './App.css'
@@ -13,9 +13,17 @@ import Skills from "./pages/technical-skills.jsx";
 import Achievements from "./pages/achievements.jsx";
 import Portfolio from "./pages/portfolio.jsx";
 
+// import AOS from "aos/src/js/aos.js";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
     const [pageTitle, setPageTitle] = useState("Home");
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     return (
         <Router>

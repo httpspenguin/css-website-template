@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const ContentImageSplit = ({ title, text, imageSrc, list, anchor, reversed }) => {
     console.log(list)
     return (
-        <section className={`content-image-split reversed-${reversed}`} id={anchor}>
+        <section className={`content-image-split reversed-${reversed}`} id={anchor} data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
             <div className="content-image-split__img-col">
                 <img className="content-image-split__img" src={imageSrc} alt=""/>
             </div>
