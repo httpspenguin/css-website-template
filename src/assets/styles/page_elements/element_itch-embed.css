@@ -1,9 +1,44 @@
 .iframe-element {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iframe-element.reversed-true {
+    flex-direction: row-reverse;
 }
 
 .iframe-element__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+}
+
+.iframe-element__content.align-end-true {
+    justify-content: end;
+}
+
+.iframe-element__iframe {
+    margin: 15px 15px;
+}
+
+.iframe-element__description {
+    margin: 15px 15px;
+}
+
+@media (max-width: 768px) {
+    .iframe-element {
+        max-width: 90%;
+    }
+
+    .iframe-element.reversed-true {
+        flex-direction: column;
+    }
+
+    .iframe-element__content {
+        flex-direction: column;
+        width: 100%;
+    }
 }

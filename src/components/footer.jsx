@@ -3,6 +3,7 @@ import '../assets/styles/footer.css';
 
 export default function Footer() {
     const socials = [
+        { name: 'Email', link: 'mailto:email@email.com', faClass: 'fa-solid fa-envelope' },
         { name: 'LinkedIn', link: 'https://uk.linkedin.com/', faClass: 'fa-brands fa-linkedin-in' },
         { name: 'GitHub', link: 'https://github.com/', faClass: 'fa-brands fa-github' },
         { name: 'YouTube', link: 'https://www.youtube.com/', faClass: 'fa-brands fa-youtube' },
