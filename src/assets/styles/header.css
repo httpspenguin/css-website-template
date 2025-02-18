@@ -1,4 +1,8 @@
 .header__header-banner {
+    background: rgb(35,25,66);
+    background: linear-gradient(180deg, rgba(35,25,66,1) 0%, rgba(46,41,96,1) 50%, rgba(67,74,157,1) 100%);
+    margin-bottom: 60px;
+
     display: flex;
     justify-content: center;
     align-items: center;
