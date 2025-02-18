@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
 import IFrameElement from "../components/page_elements/element_itch-embed.jsx";
+import YouTubeVideo from "../components/page_elements/element_youtube-video.jsx";
 
 export default function Portfolio({ setTitle }) {
     useEffect(() => {
@@ -34,14 +35,12 @@ export default function Portfolio({ setTitle }) {
 
     return (
         <>
-            {/*<IFrameElement widgets={widgets} />*/}
-
             {widgets.map((item, index) => (
-                // <iframe className="iframe-element__iframe" key={index} width="552" height="167" frameBorder="0" src={item.frameSrc}>
-                //     <a href={item.link}>{item.title}</a>
-                // </iframe>
-                <IFrameElement key={index} title={item.title} source={item.frameSrc} link={item.link} description={item.description} reversed={item.reversed} />
+                <IFrameElement key={index} title={item.title} source={item.frameSrc} link={item.link}
+                               description={item.description} reversed={item.reversed}/>
             ))}
+
+            <YouTubeVideo title="Portfolio Overview" description="Watch a quick walkthrough of top games from my portfolio." videoId="ogfYd705cRs" playTitle="My Portfolio Video" />
         </>
     )
 }

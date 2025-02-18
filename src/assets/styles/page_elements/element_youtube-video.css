@@ -1,0 +1,17 @@
+.youtube-video {
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 60px 0;
+}
+
+.youtube-video__title, .youtube-video__description {
+    text-align: center;
+}
+
+.youtube-video__video-wrapper {
+    width: 100%;
+}
+
+lite-youtube {
+    margin: 0 auto;
+}
